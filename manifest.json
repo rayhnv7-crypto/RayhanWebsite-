@@ -1,0 +1,21 @@
+{
+  "name": "Rayhan Setiawan - Website Developer",
+  "short_name": "Rayhan",
+  "description": "Jasa pembuatan website bisnis, landing page, dan company profile di Jakarta Selatan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "icons": [
+    {
+      "src": "/REY.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/REY.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

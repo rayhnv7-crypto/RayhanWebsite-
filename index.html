@@ -1,0 +1,1581 @@
+﻿<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayhan Setiawan â€“ Jasa Website & Digital Solutions Jakarta</title>
+  <meta name="description" content="Jasa website profesional di Jakarta Selatan. Website bisnis, landing page, company profile untuk UMKM dan bisnis lokal. Bantu bisnis Anda tampil online, dipercaya, dan ditemukan pelanggan." />
+  <meta name="keywords" content="jasa website jakarta, jasa website murah jakarta selatan, landing page jakarta, company profile website, jasa website UMKM, website bisnis profesional, rayhan setiawan" />
+  <meta name="author" content="Rayhan Setiawan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rayhansetiawan.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rayhansetiawan.vercel.app/" />
+  <meta property="og:title" content="Rayhan Setiawan â€“ Jasa Website & Digital Solutions Jakarta" />
+  <meta property="og:description" content="Jasa website profesional di Jakarta Selatan. Bantu bisnis Anda tampil online, dipercaya, dan ditemukan pelanggan." />
+  <meta property="og:image" content="https://rayhansetiawan.vercel.app/REY.png" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:site_name" content="Rayhan Setiawan" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rayhan Setiawan â€“ Jasa Website Jakarta" />
+  <meta name="twitter:description" content="Jasa website profesional di Jakarta Selatan untuk UMKM dan bisnis lokal." />
+  <meta name="twitter:image" content="https://rayhansetiawan.vercel.app/REY.png" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://rayhansetiawan.vercel.app/#business",
+        "name": "Rayhan Setiawan â€“ Website & Digital Solutions",
+        "url": "https://rayhansetiawan.vercel.app/",
+        "description": "Jasa website bisnis, landing page, company profile, dan solusi digital untuk UMKM dan bisnis lokal di Jakarta Selatan.",
+        "telephone": "+6285813302621",
+        "email": "rayhnv7@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Jakarta Selatan", "addressRegion": "DKI Jakarta", "addressCountry": "ID" },
+        "areaServed": { "@type": "City", "name": "Jakarta" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Layanan Digital",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Bisnis" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landing Page" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Company Profile Website" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portfolio Website" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Foundation" } }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Berapa lama pengerjaan website?", "acceptedAnswer": { "@type": "Answer", "text": "Tergantung jenis website. Landing page bisa selesai 3-5 hari kerja. Website bisnis lengkap 7-14 hari kerja." } },
+          { "@type": "Question", "name": "Apakah ada biaya maintenance?", "acceptedAnswer": { "@type": "Answer", "text": "Kami menyediakan paket maintenance opsional. Untuk website statis, biaya utama adalah hosting domain tahunan." } },
+          { "@type": "Question", "name": "Apakah bisa revisi?", "acceptedAnswer": { "@type": "Answer", "text": "Ya, tersedia revisi selama proses pengerjaan sesuai kesepakatan di awal." } },
+          { "@type": "Question", "name": "Apakah website bisa ditemukan di Google?", "acceptedAnswer": { "@type": "Answer", "text": "Setiap website yang kami bangun sudah dilengkapi SEO Foundation agar lebih mudah ditemukan di Google." } }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --gold:        #C9A96E;
+      --gold-light:  #E2C48A;
+      --gold-dim:    #8A6E45;
+      --black:       #080808;
+      --dark:        #0F0F0F;
+      --dark-2:      #141414;
+      --dark-3:      #1A1A1A;
+      --dark-4:      #242424;
+      --white:       #F5F0E8;
+      --white-dim:   #B8B0A0;
+      --white-faint: #6A6560;
+      --green:       #22c55e;
+      --serif:       'Cormorant Garamond', serif;
+      --sans:        'Inter', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::selection { background: var(--gold); color: var(--black); }
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--dark); }
+    ::-webkit-scrollbar-thumb { background: var(--gold-dim); }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .eyebrow::before { content:''; width:24px; height:1px; background:var(--gold); }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(30px, 3.5vw, 52px);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--white);
+    }
+    .section-title em { color: var(--gold); font-style: italic; }
+
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: var(--black);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 16px 32px;
+      border-radius: 2px;
+      transition: background .3s, transform .2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 15px 32px;
+      border: 1px solid rgba(245,240,232,0.2);
+      border-radius: 2px;
+      transition: border-color .3s, color .3s, transform .2s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+    /* ===== NAV ===== */
+    nav {
+      position: fixed; top:0; left:0; right:0; z-index:100;
+      padding: 20px 0;
+      transition: background .4s, padding .4s, border-color .4s;
+      border-bottom: 1px solid transparent;
+    }
+    nav.scrolled {
+      background: rgba(8,8,8,.96);
+      backdrop-filter: blur(20px);
+      padding: 14px 0;
+      border-bottom-color: rgba(201,169,110,.12);
+    }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:var(--serif); font-size:22px; font-weight:500; color:var(--white); }
+    .nav-logo span { color:var(--gold); }
+    .nav-links { display:flex; align-items:center; gap:36px; list-style:none; }
+    .nav-links a { font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--white-dim); transition:color .3s; }
+    .nav-links a:hover { color:var(--gold); }
+    .nav-cta {
+      color: var(--gold) !important;
+      border: 1px solid rgba(201,169,110,.35);
+      padding: 9px 22px;
+      border-radius: 2px;
+      transition: background .3s, color .3s !important;
+    }
+    .nav-cta:hover { background:var(--gold) !important; color:var(--black) !important; }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; }
+    .hamburger span { width:24px; height:1px; background:var(--white); }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 0 80px;
+    }
+    .hero-bg {
+      position:absolute; inset:0;
+      background:
+        radial-gradient(ellipse 70% 60% at 65% 40%, rgba(201,169,110,.06) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 10% 90%, rgba(201,169,110,.03) 0%, transparent 60%);
+      pointer-events:none;
+    }
+    .hero-grid {
+      position:absolute; inset:0;
+      background-image: linear-gradient(rgba(201,169,110,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,169,110,.025) 1px, transparent 1px);
+      background-size: 80px 80px;
+      pointer-events:none;
+    }
+    .hero-content { position:relative; z-index:2; max-width:900px; }
+
+    .hero-alert {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(201,169,110,.08);
+      border: 1px solid rgba(201,169,110,.2);
+      border-radius: 100px;
+      padding: 8px 18px;
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: .05em;
+      margin-bottom: 36px;
+    }
+    .hero-alert-dot {
+      width: 6px; height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(34,197,94,.4); }
+      50% { box-shadow: 0 0 0 6px rgba(34,197,94,0); }
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(40px, 6vw, 82px);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .hero-title .highlight { color: var(--gold); font-style: italic; }
+    .hero-title .strike {
+      text-decoration: line-through;
+      color: var(--white-faint);
+      font-style: normal;
+    }
+
+    .hero-sub-bold {
+      font-size: clamp(16px, 2vw, 22px);
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--white-dim);
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+
+    .hero-actions { display:flex; gap:14px; flex-wrap:wrap; margin-bottom: 52px; }
+
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    .hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--white-faint);
+    }
+    .hero-trust-item svg { color: var(--gold); width:14px; height:14px; }
+
+    .hero-scroll {
+      position:absolute; bottom:36px; left:50%; transform:translateX(-50%);
+      display:flex; flex-direction:column; align-items:center; gap:8px;
+      color:var(--white-faint); font-size:9px; letter-spacing:.25em; text-transform:uppercase;
+      animation: scrollPulse 2.5s ease-in-out infinite;
+    }
+    .hero-scroll-line { width:1px; height:36px; background:linear-gradient(to bottom, var(--gold), transparent); }
+    @keyframes scrollPulse {
+      0%,100% { opacity:.3; transform:translateX(-50%) translateY(0); }
+      50% { opacity:1; transform:translateX(-50%) translateY(6px); }
+    }
+
+    /* ===== STATS ===== */
+    .stats-bar {
+      background: var(--dark-2);
+      border-top: 1px solid rgba(201,169,110,.1);
+      border-bottom: 1px solid rgba(201,169,110,.1);
+      padding: 28px 0;
+    }
+    .stats-inner { display:grid; grid-template-columns:repeat(4,1fr); }
+    .stat-item { text-align:center; padding:12px 20px; position:relative; }
+    .stat-item:not(:last-child)::after {
+      content:''; position:absolute; right:0; top:15%; height:70%; width:1px;
+      background:rgba(201,169,110,.15);
+    }
+    .stat-num {
+      font-family:var(--serif); font-size:38px; font-weight:300;
+      color:var(--gold); line-height:1; margin-bottom:6px;
+    }
+    .stat-label { font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--white-faint); }
+
+    /* ===== WHY DIGITAL ===== */
+    #why {
+      padding: 120px 0;
+      background: var(--dark);
+    }
+    .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+    .why-left {}
+    .why-title { margin-bottom:24px; }
+    .why-desc { font-size:15px; font-weight:300; line-height:1.85; color:var(--white-dim); margin-bottom:32px; }
+    .why-stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .why-stat-card {
+      background: var(--dark-3);
+      border: 1px solid rgba(201,169,110,.1);
+      border-radius:3px;
+      padding: 24px 20px;
+      transition: border-color .3s;
+    }
+    .why-stat-card:hover { border-color: rgba(201,169,110,.3); }
+    .why-stat-num { font-family:var(--serif); font-size:32px; font-weight:300; color:var(--gold); line-height:1; margin-bottom:6px; }
+    .why-stat-label { font-size:12px; color:var(--white-dim); line-height:1.5; }
+
+    .why-right { display:flex; flex-direction:column; gap:12px; }
+    .why-card {
+      background: var(--dark-3);
+      border: 1px solid rgba(201,169,110,.08);
+      border-left: 3px solid var(--gold);
+      border-radius:2px;
+      padding: 24px 28px;
+      transition: background .3s, transform .2s;
+    }
+    .why-card:hover { background:var(--dark-4); transform:translateX(4px); }
+    .why-card-title { font-size:14px; font-weight:600; color:var(--white); margin-bottom:6px; }
+    .why-card-desc { font-size:13px; font-weight:300; color:var(--white-dim); line-height:1.7; }
+
+    /* ===== SERVICES ===== */
+    #services {
+      padding: 120px 0;
+      background: var(--black);
+    }
+    .services-header { text-align:center; max-width:620px; margin:0 auto 72px; }
+    .services-header .section-title { margin-bottom:16px; }
+    .services-header p { font-size:14px; font-weight:300; color:var(--white-dim); line-height:1.8; }
+
+    .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-bottom:2px; }
+    .services-row2 { display:grid; grid-template-columns:repeat(2,1fr); gap:2px; }
+
+    .service-card {
+      background: var(--dark-2);
+      padding: 44px 36px 52px;
+      position:relative; overflow:hidden;
+      transition: background .3s;
+    }
+    .service-card:hover { background:var(--dark-3); }
+    .service-card::after {
+      content:'';
+      position:absolute; top:0; left:0; right:0; height:2px;
+      background:var(--gold); transform:scaleX(0);
+      transition:transform .4s; transform-origin:left;
+    }
+    .service-card:hover::after { transform:scaleX(1); }
+
+    .service-tag {
+      display:inline-block;
+      font-size:9px; font-weight:600; letter-spacing:.3em; text-transform:uppercase;
+      color:var(--gold); border:1px solid rgba(201,169,110,.25);
+      padding:4px 10px; border-radius:1px; margin-bottom:24px;
+    }
+    .service-icon {
+      width:52px; height:52px;
+      border:1px solid rgba(201,169,110,.2); border-radius:2px;
+      display:flex; align-items:center; justify-content:center;
+      margin-bottom:24px;
+      transition:border-color .3s, background .3s;
+    }
+    .service-card:hover .service-icon { border-color:var(--gold); background:rgba(201,169,110,.08); }
+    .service-icon svg { width:22px; height:22px; color:var(--gold); }
+
+    .service-name { font-family:var(--serif); font-size:24px; font-weight:400; color:var(--white); margin-bottom:12px; }
+    .service-desc { font-size:13px; font-weight:300; line-height:1.8; color:var(--white-dim); margin-bottom:20px; }
+
+    .service-includes { list-style:none; display:flex; flex-direction:column; gap:8px; }
+    .service-includes li {
+      display:flex; align-items:center; gap:10px;
+      font-size:12px; color:var(--white-dim);
+    }
+    .service-includes li::before {
+      content:''; width:4px; height:4px; border-radius:50%;
+      background:var(--gold); flex-shrink:0;
+    }
+
+    /* ===== PORTFOLIO ===== */
+    #portfolio { padding:120px 0; background:var(--dark); }
+    .portfolio-header { max-width:560px; margin-bottom:60px; }
+    .portfolio-header .section-title { margin-bottom:16px; }
+    .portfolio-header p { font-size:14px; font-weight:300; color:var(--white-dim); line-height:1.8; }
+
+    .portfolio-scroll-wrap {
+      overflow-x:auto; overflow-y:visible;
+      scrollbar-width:none; -ms-overflow-style:none;
+      padding-bottom:8px; margin:0 -40px; padding-left:40px; padding-right:40px;
+    }
+    .portfolio-scroll-wrap::-webkit-scrollbar { display:none; }
+    .portfolio-cards { display:flex; gap:20px; width:max-content; }
+
+    .portfolio-card {
+      width:360px; flex-shrink:0;
+      background:var(--dark-2);
+      border:1px solid rgba(201,169,110,.06);
+      border-radius:3px;
+      overflow:hidden;
+      transition:border-color .3s, transform .3s;
+      display:flex; flex-direction:column;
+    }
+    .portfolio-card:hover { border-color:rgba(201,169,110,.2); transform:translateY(-4px); }
+
+    .portfolio-img-wrap { position:relative; overflow:hidden; height:240px; background:var(--dark-3); }
+    .portfolio-img-wrap img {
+      width:100%; height:100%; object-fit:cover; object-position:top;
+      transition:transform .6s; filter:brightness(.92);
+    }
+    .portfolio-card:hover .portfolio-img-wrap img { transform:scale(1.04); }
+    .portfolio-img-badge {
+      position:absolute; top:14px; left:14px;
+      font-size:9px; font-weight:600; letter-spacing:.2em; text-transform:uppercase;
+      color:var(--black); background:var(--gold); padding:4px 10px; border-radius:1px;
+    }
+
+    .portfolio-card-body { padding:24px 24px 20px; flex:1; display:flex; flex-direction:column; gap:8px; }
+    .portfolio-card-name { font-family:var(--serif); font-size:22px; font-weight:400; color:var(--white); line-height:1.2; }
+    .portfolio-card-desc { font-size:12px; font-weight:300; color:var(--white-dim); line-height:1.7; flex:1; }
+    .portfolio-card-link {
+      display:inline-flex; align-items:center; gap:8px; margin-top:12px;
+      font-size:11px; font-weight:600; letter-spacing:.12em; text-transform:uppercase;
+      color:var(--gold); border:1px solid rgba(201,169,110,.25); padding:10px 18px; border-radius:2px;
+      transition:background .3s, color .3s; align-self:flex-start;
+    }
+    .portfolio-card-link:hover { background:var(--gold); color:var(--black); }
+    .portfolio-card-link svg { width:12px; height:12px; }
+    .portfolio-card-link.no-link { opacity:.4; cursor:default; pointer-events:none; }
+
+    .portfolio-scroll-nav { display:flex; align-items:center; justify-content:flex-end; gap:10px; margin-bottom:20px; }
+    .scroll-btn {
+      width:44px; height:44px; border-radius:50%;
+      border:1px solid rgba(201,169,110,.25); background:var(--dark-2);
+      display:flex; align-items:center; justify-content:center;
+      cursor:pointer; transition:background .3s, border-color .3s;
+    }
+    .scroll-btn:hover { background:var(--gold); border-color:var(--gold); }
+    .scroll-btn:hover svg { color:var(--black); }
+    .scroll-btn svg { width:16px; height:16px; color:var(--gold); transition:color .3s; }
+    .scroll-hint { font-size:11px; color:var(--white-faint); letter-spacing:.1em; }
+
+    /* ===== PROCESS ===== */
+    #process {
+      padding: 120px 0;
+      background: var(--black);
+    }
+    .process-header { text-align:center; max-width:560px; margin:0 auto 72px; }
+    .process-header .section-title { margin-bottom:16px; }
+    .process-header p { font-size:14px; font-weight:300; color:var(--white-dim); line-height:1.8; }
+
+    .process-steps {
+      display:grid; grid-template-columns:repeat(4,1fr);
+      position:relative;
+    }
+    .process-steps::before {
+      content:'';
+      position:absolute; top:40px; left:12.5%; right:12.5%; height:1px;
+      background:linear-gradient(90deg, transparent, var(--gold-dim), var(--gold-dim), transparent);
+      opacity:.3;
+    }
+    .process-step { text-align:center; padding:0 24px; }
+    .process-num {
+      width:80px; height:80px; border-radius:50%;
+      border:1px solid rgba(201,169,110,.25);
+      display:flex; align-items:center; justify-content:center;
+      margin:0 auto 24px;
+      font-family:var(--serif); font-size:28px; font-weight:300; color:var(--gold);
+      background:var(--dark-2);
+      position:relative; z-index:1;
+      transition:border-color .3s, background .3s;
+    }
+    .process-step:hover .process-num { border-color:var(--gold); background:var(--dark-3); }
+    .process-step-title { font-size:15px; font-weight:600; color:var(--white); margin-bottom:10px; }
+    .process-step-desc { font-size:13px; font-weight:300; color:var(--white-dim); line-height:1.75; }
+
+    /* ===== TESTIMONIALS ===== */
+    #testimonials {
+      padding: 120px 0;
+      background: var(--dark);
+    }
+    .testimonials-header { text-align:center; max-width:520px; margin:0 auto 64px; }
+    .testimonials-header .section-title { margin-bottom:16px; }
+
+    .testimonials-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
+    .testi-card {
+      background: var(--dark-2);
+      padding: 40px 36px;
+      position:relative;
+      transition:background .3s;
+    }
+    .testi-card:hover { background:var(--dark-3); }
+    .testi-stars { display:flex; gap:4px; margin-bottom:20px; }
+    .testi-stars svg { width:14px; height:14px; fill:var(--gold); }
+    .testi-quote {
+      font-family:var(--serif); font-size:42px; font-weight:300;
+      color:rgba(201,169,110,.15); line-height:1;
+      position:absolute; top:24px; right:28px;
+    }
+    .testi-text { font-size:14px; font-weight:300; line-height:1.85; color:var(--white-dim); margin-bottom:28px; font-style:italic; }
+    .testi-divider { width:32px; height:1px; background:var(--gold); margin-bottom:20px; opacity:.4; }
+    .testi-name { font-size:14px; font-weight:600; color:var(--white); margin-bottom:4px; }
+    .testi-role { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); }
+
+    /* ===== FAQ ===== */
+    #faq {
+      padding: 120px 0;
+      background: var(--black);
+    }
+    .faq-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:80px; align-items:start; }
+    .faq-left .section-title { margin-bottom:20px; }
+    .faq-left p { font-size:14px; font-weight:300; color:var(--white-dim); line-height:1.8; margin-bottom:36px; }
+
+    .faq-list { display:flex; flex-direction:column; gap:2px; }
+    .faq-item {
+      background: var(--dark-2);
+      border-left: 2px solid transparent;
+      transition: border-color .3s, background .3s;
+    }
+    .faq-item.open { border-left-color: var(--gold); background:var(--dark-3); }
+    .faq-question {
+      width:100%; display:flex; align-items:center; justify-content:space-between;
+      padding:22px 28px;
+      background:none; border:none; cursor:pointer;
+      font-family:var(--sans); font-size:14px; font-weight:500;
+      color:var(--white); text-align:left;
+      transition:color .3s;
+    }
+    .faq-question:hover { color:var(--gold); }
+    .faq-item.open .faq-question { color:var(--gold); }
+    .faq-icon { width:20px; height:20px; flex-shrink:0; color:var(--gold); transition:transform .3s; }
+    .faq-item.open .faq-icon { transform:rotate(45deg); }
+    .faq-answer {
+      max-height:0; overflow:hidden;
+      transition:max-height .4s ease, padding .4s ease;
+      font-size:13px; font-weight:300; color:var(--white-dim); line-height:1.8;
+      padding:0 28px;
+    }
+    .faq-item.open .faq-answer { max-height:200px; padding:0 28px 22px; }
+
+    /* ===== CTA BANNER ===== */
+    #cta {
+      padding: 100px 0;
+      background: var(--dark-2);
+      position:relative; overflow:hidden;
+    }
+    #cta::before {
+      content:'';
+      position:absolute; inset:0;
+      background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201,169,110,.06) 0%, transparent 70%);
+      pointer-events:none;
+    }
+    .cta-inner { text-align:center; position:relative; z-index:1; }
+    .cta-title {
+      font-family:var(--serif); font-size:clamp(32px,4vw,60px); font-weight:300;
+      line-height:1.15; color:var(--white); margin-bottom:20px;
+    }
+    .cta-title em { color:var(--gold); font-style:italic; }
+    .cta-sub { font-size:15px; font-weight:300; color:var(--white-dim); max-width:520px; margin:0 auto 44px; line-height:1.8; }
+    .cta-actions { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+    .cta-note { margin-top:20px; font-size:12px; color:var(--white-faint); }
+
+    /* ===== CONTACT ===== */
+    #contact {
+      padding: 120px 0;
+      background: var(--dark);
+    }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+    .contact-left .section-title { margin-bottom:20px; }
+    .contact-left p { font-size:14px; font-weight:300; color:var(--white-dim); line-height:1.85; margin-bottom:48px; }
+    .contact-items { display:flex; flex-direction:column; gap:14px; }
+    .contact-item {
+      display:flex; align-items:center; gap:18px;
+      padding:20px 24px;
+      background:var(--dark-3); border:1px solid rgba(201,169,110,.1); border-radius:3px;
+      transition:border-color .3s, transform .2s;
+    }
+    a.contact-item:hover { border-color:rgba(201,169,110,.35); transform:translateX(4px); }
+    .contact-icon {
+      width:42px; height:42px; border-radius:2px;
+      background:rgba(201,169,110,.1);
+      display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    }
+    .contact-icon svg { width:18px; height:18px; color:var(--gold); }
+    .contact-label { font-size:10px; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:3px; }
+    .contact-value { font-size:14px; color:var(--white); }
+
+    .contact-form-box {
+      background:var(--dark-3); border:1px solid rgba(201,169,110,.12); border-radius:4px;
+      padding:44px 40px;
+    }
+    .form-title { font-family:var(--serif); font-size:22px; font-weight:400; color:var(--white); margin-bottom:28px; }
+    .form-group { margin-bottom:18px; }
+    .form-label { display:block; font-size:10px; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-dim); margin-bottom:9px; }
+    .form-input, .form-textarea, .form-select {
+      width:100%; background:rgba(255,255,255,.04); border:1px solid rgba(201,169,110,.15); border-radius:2px;
+      padding:13px 16px; font-family:var(--sans); font-size:14px; font-weight:300; color:var(--white);
+      outline:none; transition:border-color .3s;
+    }
+    .form-input:focus, .form-textarea:focus, .form-select:focus { border-color:rgba(201,169,110,.5); }
+    .form-input::placeholder, .form-textarea::placeholder { color:var(--white-faint); }
+    .form-select { appearance:none; cursor:pointer; }
+    .form-select option { background:var(--dark-3); color:var(--white); }
+    .form-textarea { min-height:110px; resize:vertical; }
+    .form-submit { width:100%; margin-top:6px; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background:var(--black);
+      border-top:1px solid rgba(201,169,110,.08);
+      padding:56px 0 36px;
+    }
+    .footer-inner { display:flex; flex-direction:column; align-items:center; gap:28px; text-align:center; }
+    .footer-logo { font-family:var(--serif); font-size:26px; font-weight:300; color:var(--white); }
+    .footer-logo span { color:var(--gold); }
+    .footer-tagline { font-size:11px; letter-spacing:.25em; text-transform:uppercase; color:var(--white-faint); }
+    .footer-nav { display:flex; gap:32px; list-style:none; flex-wrap:wrap; justify-content:center; }
+    .footer-nav a { font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:var(--white-faint); transition:color .3s; }
+    .footer-nav a:hover { color:var(--gold); }
+    .footer-divider { width:100%; height:1px; background:rgba(201,169,110,.07); }
+    .footer-bottom { display:flex; justify-content:space-between; align-items:center; width:100%; }
+    .footer-copy { font-size:12px; color:var(--white-faint); }
+
+    /* ===== WA FLOAT ===== */
+    .wa-float {
+      position:fixed; bottom:28px; right:28px; z-index:99;
+      width:56px; height:56px; background:#25D366; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 8px 24px rgba(37,211,102,.35);
+      transition:transform .3s, box-shadow .3s;
+    }
+    .wa-float:hover { transform:scale(1.1); box-shadow:0 12px 32px rgba(37,211,102,.5); }
+    .wa-float svg { width:26px; height:26px; fill:#fff; }
+
+    /* ===== TEKNOLOGI ===== */
+    #teknologi { padding:100px 0; background:var(--dark); border-top:1px solid rgba(201,169,110,.08); }
+    .teknologi-header { text-align:center; margin-bottom:60px; }
+    .teknologi-header p { max-width:560px; margin:0 auto; color:var(--white-dim); font-size:15px; }
+    .teknologi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-bottom:2px; }
+    .teknologi-card {
+      background:var(--dark-2); padding:36px 32px;
+      display:flex; flex-direction:column; gap:16px;
+      transition:background .3s; position:relative; overflow:hidden;
+    }
+    .teknologi-card::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:2px;
+      background:linear-gradient(90deg,var(--gold),transparent);
+      opacity:0; transition:opacity .3s;
+    }
+    .teknologi-card:hover { background:var(--dark-3); }
+    .teknologi-card:hover::before { opacity:1; }
+    .tek-logo-wrap { height:80px; display:flex; align-items:center; margin-bottom:4px; }
+    .tek-logo-claude {
+      display:flex; align-items:center; gap:12px;
+      background:linear-gradient(135deg,#c96442,#e8834f);
+      border-radius:12px; padding:14px 18px;
+    }
+    .tek-logo-claude-icon { width:36px; height:36px; }
+    .tek-logo-claude-text { display:flex; flex-direction:column; }
+    .tek-logo-claude-text span:first-child { font-size:18px; font-weight:700; color:#fff; line-height:1; letter-spacing:-.02em; }
+    .tek-logo-claude-text span:last-child { font-size:9px; color:rgba(255,255,255,.65); letter-spacing:.1em; text-transform:uppercase; margin-top:2px; }
+
+    .tek-logo-ag {
+      display:flex; align-items:center; gap:12px;
+      background:linear-gradient(135deg,#0a0a0a,#1a1a2e);
+      border:1px solid rgba(99,102,241,.3); border-radius:12px; padding:14px 18px;
+    }
+    .tek-logo-ag-icon {
+      width:36px; height:36px; background:linear-gradient(135deg,#6366f1,#8b5cf6);
+      border-radius:8px; display:flex; align-items:center; justify-content:center;
+    }
+    .tek-logo-ag-icon svg { width:20px; height:20px; fill:#fff; }
+    .tek-logo-ag-text { display:flex; flex-direction:column; }
+    .tek-logo-ag-text span:first-child { font-size:18px; font-weight:700; color:#fff; line-height:1; letter-spacing:-.02em; }
+    .tek-logo-ag-text span:last-child { font-size:9px; color:rgba(99,102,241,.8); letter-spacing:.1em; text-transform:uppercase; margin-top:2px; }
+
+    .tek-icon {
+      width:52px; height:52px; border:1px solid rgba(201,169,110,.2); border-radius:4px;
+      display:flex; align-items:center; justify-content:center; background:rgba(201,169,110,.05);
+    }
+    .tek-icon svg { width:26px; height:26px; color:var(--gold); }
+    .tek-name { font-family:var(--serif); font-size:22px; font-weight:400; color:var(--white); }
+    .tek-role { font-size:10px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
+    .tek-desc { font-size:13px; font-weight:300; color:var(--white-dim); line-height:1.7; }
+    .tek-badge { display:inline-block; font-size:9px; font-weight:600; letter-spacing:.15em; text-transform:uppercase; background:rgba(201,169,110,.1); color:var(--gold); padding:4px 10px; border-radius:2px; border:1px solid rgba(201,169,110,.2); }
+    .teknologi-note { background:var(--dark-2); padding:28px 40px; display:flex; align-items:center; justify-content:center; gap:12px; border-top:1px solid rgba(201,169,110,.08); }
+    .teknologi-note p { font-size:13px; color:var(--white-dim); font-style:italic; }
+    .teknologi-note strong { color:var(--gold); }
+
+    /* ===== AREA COVERAGE ===== */
+    #area { padding:80px 0; background:var(--black); border-top:1px solid rgba(201,169,110,.08); }
+    .area-header { text-align:center; margin-bottom:48px; }
+    .area-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; }
+    .area-col { background:var(--dark-2); padding:28px; }
+    .area-col-title { font-size:10px; font-weight:700; letter-spacing:.25em; text-transform:uppercase; color:var(--gold); margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid rgba(201,169,110,.12); }
+    .area-list { list-style:none; display:flex; flex-direction:column; gap:8px; }
+    .area-list li { font-size:13px; color:var(--white-dim); display:flex; align-items:center; gap:8px; }
+    .area-list li::before { content:''; width:4px; height:4px; border-radius:50%; background:var(--gold-dim); flex-shrink:0; }
+    .area-note { text-align:center; margin-top:20px; font-size:12px; color:var(--white-faint); }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:1024px) {
+      .teknologi-grid { grid-template-columns:repeat(2,1fr); }
+      .area-grid { grid-template-columns:repeat(2,1fr); }
+      .why-grid { grid-template-columns:1fr; gap:52px; }
+      .contact-grid { grid-template-columns:1fr; gap:52px; }
+      .faq-grid { grid-template-columns:1fr; gap:52px; }
+      .services-grid { grid-template-columns:repeat(2,1fr); }
+      .services-row2 { grid-template-columns:1fr; }
+      .process-steps { grid-template-columns:repeat(2,1fr); gap:40px; }
+      .process-steps::before { display:none; }
+      .portfolio-item:nth-child(1) { grid-column:span 12; }
+      .portfolio-item:nth-child(2) { grid-column:span 6; }
+      .portfolio-item:nth-child(3) { grid-column:span 6; }
+      .portfolio-item:nth-child(4) { grid-column:span 12; }
+      .testimonials-grid { grid-template-columns:1fr; }
+    }
+    @media(max-width:768px) {
+      .container { padding:0 20px; }
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+      .services-grid { grid-template-columns:1fr; }
+      .stats-inner { grid-template-columns:repeat(2,1fr); }
+      .stat-item:nth-child(2)::after { display:none; }
+      .portfolio-scroll-wrap { margin:0 -20px; padding-left:20px; padding-right:20px; }
+      .portfolio-card { width:300px; }
+      .portfolio-img-wrap { height:200px; }
+      .teknologi-grid { grid-template-columns:1fr; }
+      .area-grid { grid-template-columns:repeat(2,1fr); }
+      .why-stats-grid { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:10px; }
+    }
+    @media(max-width:480px) {
+      .hero-actions { flex-direction:column; }
+      .cta-actions { flex-direction:column; align-items:center; }
+      .btn-gold, .btn-outline { justify-content:center; }
+      .contact-form-box { padding:28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">Rayhan<span>WEBSITE</span></a>
+        <ul class="nav-links">
+          <li><a href="#why">Kenapa Digital</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="/artikel/">Artikel</a></li>
+          <li><a href="#contact" class="nav-cta">Konsultasi Gratis</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-alert">
+          <div class="hero-alert-dot"></div>
+          Melayani Bisnis di Jakarta & Sekitarnya
+        </div>
+        <h1 class="hero-title">
+          Bisnis Tanpa Website<br />
+          di Era Digital Ini?<br />
+          <span class="highlight">Anda Sedang Rugi</span>
+        </h1>
+        <p class="hero-sub-bold">
+          212 juta orang Indonesia aktif di internet â€” sebagian besar mencari produk & jasa lewat Google sebelum membeli.
+        </p>
+        <p class="hero-sub">
+          Saya membangun website dan solusi digital yang membantu bisnis Anda tampil profesional, ditemukan pelanggan, dan dipercaya â€” bukan sekadar punya website, tapi website yang bekerja untuk bisnis Anda.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/6285813302621?text=Halo%20Rayhan%2C%20saya%20ingin%20konsultasi%20gratis%20tentang%20website%20bisnis%20saya" class="btn-gold" target="_blank" rel="noopener">
+            Konsultasi Gratis Sekarang
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="#portfolio" class="btn-outline">Lihat Hasil Kerja</a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Respon dalam 24 jam
+          </div>
+          <div class="hero-trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Konsultasi gratis tanpa syarat
+          </div>
+          <div class="hero-trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Harga transparan, tidak ada biaya tersembunyi
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll"><div class="hero-scroll-line"></div><span>Scroll</span></div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <div class="stat-num">212M+</div>
+          <div class="stat-label">Pengguna Internet Indonesia</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">78%</div>
+          <div class="stat-label">Cari Produk Lewat Google</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3 Dtk</div>
+          <div class="stat-label">Keputusan Pertama Pengunjung</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Website Bekerja untuk Anda</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY DIGITAL -->
+  <section id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-left">
+          <p class="eyebrow">Kenapa Harus Digital Sekarang</p>
+          <h2 class="section-title why-title">
+            Pelanggan Anda<br />
+            Sudah <em>Ada di Internet.</em><br />
+            Bisnis Anda Belum?
+          </h2>
+          <p class="why-desc">
+            Di tahun 2025, tidak punya website bukan hanya ketinggalan â€” itu artinya Anda menyerahkan pelanggan Anda kepada kompetitor yang sudah online. Setiap hari tanpa website adalah hari yang menguntungkan pesaing Anda.
+          </p>
+          <p class="why-desc">
+            Website bukan lagi kemewahan. Ini adalah kebutuhan dasar bisnis â€” seperti punya nomor telepon dan alamat toko.
+          </p>
+          <a href="https://wa.me/6285813302621?text=Halo%20Rayhan%2C%20saya%20ingin%20tahu%20lebih%20lanjut%20soal%20website%20untuk%20bisnis%20saya" class="btn-gold" target="_blank" rel="noopener">Mulai Sekarang</a>
+        </div>
+        <div class="why-right">
+          <div class="why-stat-card" style="grid-column:span 2;" >
+            <div class="why-stats-grid">
+              <div>
+                <div class="why-stat-num">74%</div>
+                <div class="why-stat-label">Konsumen menilai kredibilitas bisnis dari websitenya</div>
+              </div>
+              <div>
+                <div class="why-stat-num">70%</div>
+                <div class="why-stat-label">Calon pelanggan tidak percaya bisnis tanpa website</div>
+              </div>
+            </div>
+          </div>
+          <div class="why-card">
+            <div class="why-card-title">ðŸ” Ditemukan di Google</div>
+            <div class="why-card-desc">Saat seseorang mencari "jasa cat rumah Jakarta" atau "bengkel las Depok" â€” bisnis Anda yang harus muncul pertama, bukan kompetitor.</div>
+          </div>
+          <div class="why-card">
+            <div class="why-card-title">ðŸ¤ Dipercaya Sebelum Dihubungi</div>
+            <div class="why-card-desc">Website yang rapi dan profesional membangun kepercayaan sebelum calon pelanggan menelepon. Kesan pertama terjadi online.</div>
+          </div>
+          <div class="why-card">
+            <div class="why-card-title">ðŸ’° Pemasaran yang Bekerja 24 Jam</div>
+            <div class="why-card-desc">Karyawan tidur, Anda tidur â€” tapi website terus berjalan, menjawab pertanyaan, dan membawa calon pelanggan baru setiap saat.</div>
+          </div>
+          <div class="why-card">
+            <div class="why-card-title">ðŸ“ˆ Siap untuk Google Ads & SEO</div>
+            <div class="why-card-desc">Setiap website yang saya bangun sudah disiapkan untuk mendukung iklan Google Ads dan optimasi SEO agar investasi Anda tidak terbuang sia-sia.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="services-header">
+        <p class="eyebrow" style="justify-content:center;">Layanan</p>
+        <h2 class="section-title">Solusi Digital yang<br /><em>Tepat untuk Bisnis Anda</em></h2>
+        <p>Setiap layanan dirancang dengan satu tujuan: membantu bisnis Anda tumbuh dan dipercaya secara online.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-tag">Paling Populer</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 class="service-name">Website Bisnis</h3>
+          <p class="service-desc">Wajah digital bisnis Anda. Dirancang untuk membangun kepercayaan, menjelaskan layanan, dan mendorong calon pelanggan menghubungi Anda.</p>
+          <ul class="service-includes">
+            <li>Desain premium & responsif mobile</li>
+            <li>SEO Foundation bawaan</li>
+            <li>Integrasi WhatsApp Business</li>
+            <li>Google Maps & kontak lengkap</li>
+            <li>Galeri produk / layanan</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-tag">Konversi Tinggi</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="service-name">Landing Page</h3>
+          <p class="service-desc">Halaman fokus satu tujuan â€” cocok untuk iklan Google Ads, promosi produk, atau campaign khusus yang butuh hasil nyata.</p>
+          <ul class="service-includes">
+            <li>Copywriting persuasif</li>
+            <li>CTA yang mendorong aksi</li>
+            <li>Optimasi kecepatan halaman</li>
+            <li>Siap untuk Google Ads</li>
+            <li>Form & integrasi WA otomatis</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-tag">Profesionalitas</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21H5a2 2 0 01-2-2V7l5-5h11a2 2 0 012 2v15z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg>
+          </div>
+          <h3 class="service-name">Company Profile</h3>
+          <p class="service-desc">Perkenalkan perusahaan Anda secara profesional. Ideal untuk tender, presentasi klien B2B, dan memperkuat kredibilitas bisnis.</p>
+          <ul class="service-includes">
+            <li>Profil perusahaan lengkap</li>
+            <li>Halaman tim & struktur</li>
+            <li>Portofolio & klien</li>
+            <li>Visi, misi & nilai perusahaan</li>
+            <li>Download company profile PDF</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="services-row2" style="margin-top:2px;">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+          <h3 class="service-name">SEO Foundation</h3>
+          <p class="service-desc">Fondasi teknis agar website Anda lebih mudah ditemukan di Google secara organik â€” investasi jangka panjang yang terus menghasilkan.</p>
+          <ul class="service-includes">
+            <li>Riset keyword bisnis Anda</li>
+            <li>Optimasi meta & struktur konten</li>
+            <li>Schema markup & sitemap</li>
+            <li>Google Search Console setup</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3 class="service-name">Digital Presence</h3>
+          <p class="service-desc">Paket lengkap kehadiran digital â€” website, Google Business Profile, dan konsultasi strategi online agar bisnis Anda terlihat di mana pun pelanggan mencari.</p>
+          <ul class="service-includes">
+            <li>Website + Google Business Profile</li>
+            <li>Setup Google Maps</li>
+            <li>Konsultasi strategi digital</li>
+            <li>Panduan konten dasar</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:52px;">
+        <a href="https://wa.me/6285813302621?text=Halo%20Rayhan%2C%20saya%20ingin%20tanya%20tentang%20layanan%20dan%20harga%20website" class="btn-gold" target="_blank" rel="noopener">Tanya Harga & Konsultasi Gratis</a>
+        <p style="margin-top:14px; font-size:12px; color:var(--white-faint);">Respon dalam 24 jam Â· Tidak ada komitmen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEKNOLOGI -->
+  <section id="teknologi">
+    <div class="container">
+      <div class="teknologi-header">
+        <p class="eyebrow" style="justify-content:center;">Teknologi yang Kami Gunakan</p>
+        <h2 class="section-title" style="text-align:center;">Dibangun dengan<br /><em>Teknologi AI Terkini</em></h2>
+        <p>Seperti mesin laser cutting presisi tinggi yang menghasilkan pekerjaan terbaik â€” kami menggunakan teknologi AI generasi terbaru untuk membangun website yang lebih cepat, lebih cerdas, dan lebih efektif untuk bisnis Anda.</p>
+      </div>
+      <div class="teknologi-grid">
+
+        <div class="teknologi-card">
+          <div class="tek-logo-wrap">
+            <img src="claude-anthropic.jpg" alt="Claude AI by Anthropic" style="height:72px;width:auto;border-radius:8px;object-fit:contain;" />
+          </div>
+          <div class="tek-role">AI Engine</div>
+          <div class="tek-name">Claude AI</div>
+          <div class="tek-desc">AI buatan Anthropic â€” digunakan untuk riset konten, copywriting persuasif, dan optimasi struktur website agar relevan bagi pelanggan dan Google.</div>
+          <div class="tek-badge">Anthropic Â· 2025</div>
+        </div>
+
+        <div class="teknologi-card">
+          <div class="tek-logo-wrap" style="gap:10px;display:flex;align-items:center;">
+            <img src="antigravity-1.jpg" alt="Google Antigravity" style="height:68px;width:auto;border-radius:8px;object-fit:contain;" />
+            <img src="antigravity-2.jpg" alt="Google Antigravity Agent-First IDE" style="height:68px;width:auto;border-radius:8px;object-fit:contain;" />
+          </div>
+          <div class="tek-role">Rapid Development</div>
+          <div class="tek-name">Antigravity</div>
+          <div class="tek-desc">Platform development terbaru yang memungkinkan pembuatan website berkualitas tinggi dengan kecepatan dan efisiensi yang jauh melampaui metode konvensional.</div>
+          <div class="tek-badge">Next-Gen Â· AI-Powered</div>
+        </div>
+
+        <div class="teknologi-card">
+          <div class="tek-logo-wrap">
+            <img src="Google.jpg" alt="Google SEO" style="height:72px;width:auto;border-radius:8px;object-fit:contain;" />
+          </div>
+          <div class="tek-role">Performance & SEO</div>
+          <div class="tek-name">SEO Foundation</div>
+          <div class="tek-desc">Setiap website dilengkapi schema markup, sitemap XML, meta tags teroptimasi, Core Web Vitals ready, dan mobile-first â€” siap di-index Google dari hari pertama.</div>
+          <div class="tek-badge">Google Ready Â· Day 1</div>
+        </div>
+
+        <div class="teknologi-card">
+          <div class="tek-logo-wrap">
+            <img src="whatsapp.jpg" alt="WhatsApp Business" style="height:72px;width:auto;border-radius:8px;object-fit:contain;" />
+          </div>
+          <div class="tek-role">Conversion Tool</div>
+          <div class="tek-name">WhatsApp Business API</div>
+          <div class="tek-desc">Integrasi langsung ke WhatsApp Business dengan pesan pre-filled â€” setiap klik tombol membawa calon pelanggan langsung ke percakapan yang sudah siap direspons.</div>
+          <div class="tek-badge">Direct Conversion</div>
+        </div>
+
+        <div class="teknologi-card">
+          <div class="tek-logo-wrap">
+            <img src="google-analytics.jpg" alt="Google Analytics" style="height:72px;width:auto;border-radius:8px;object-fit:contain;" />
+          </div>
+          <div class="tek-role">Analytics & Monitoring</div>
+          <div class="tek-name">Google Analytics & GSC</div>
+          <div class="tek-desc">Setup Google Analytics 4 dan Google Search Console â€” pantau siapa yang mengunjungi website, dari mana, keyword apa yang membawa mereka, dan performa SEO real-time.</div>
+          <div class="tek-badge">Data-Driven</div>
+        </div>
+
+        <div class="teknologi-card">
+          <div class="tek-logo-wrap">
+            <img src="github-developer.jpg" alt="GitHub Developer" style="height:72px;width:auto;border-radius:8px;object-fit:contain;" />
+          </div>
+          <div class="tek-role">Version Control</div>
+          <div class="tek-name">GitHub</div>
+          <div class="tek-desc">Seluruh kode website dikelola dengan version control GitHub â€” histori perubahan tercatat, backup otomatis, dan kolaborasi yang terstruktur untuk setiap proyek.</div>
+          <div class="tek-badge">Open Source Â· Secure</div>
+        </div>
+
+      </div>
+      <div class="teknologi-note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--gold);flex-shrink:0"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <p>Kombinasi AI + teknologi modern ini memungkinkan pengerjaan <strong>lebih cepat</strong>, kualitas <strong>lebih konsisten</strong>, dan hasil yang <strong>teroptimasi untuk bisnis Anda</strong> â€” bukan sekadar website cantik.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <p class="eyebrow">Portfolio</p>
+        <h2 class="section-title" style="margin-bottom:16px;">Karya Terpilih</h2>
+        <p>Beberapa proyek yang telah saya bangun untuk membantu bisnis tampil lebih profesional dan dipercaya secara online.</p>
+      </div>
+      <div class="portfolio-scroll-nav">
+        <span class="scroll-hint">Geser untuk lihat lebih â†’</span>
+        <button class="scroll-btn" id="scrollLeft" aria-label="Scroll kiri">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="scroll-btn" id="scrollRight" aria-label="Scroll kanan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+      <div class="portfolio-scroll-wrap" id="portfolioScroll">
+        <div class="portfolio-cards">
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="Screenshot 2026-06-16 221154.png" alt="Fuoco Farina Famiglia â€“ Website Restoran Jakarta" loading="lazy" />
+              <div class="portfolio-img-badge">Website Restoran</div>
+            </div>
+            <div class="portfolio-card-body">
+              <div class="portfolio-card-name">Fuoco. Farina. Famiglia.</div>
+              <div class="portfolio-card-desc">Website restoran Italia dengan nuansa premium â€” menu digital, reservasi online, dan cerita brand yang kuat untuk menarik tamu baru.</div>
+              <a href="https://landing-page-pizza-hut-mhgghh.vercel.app/" class="portfolio-card-link" target="_blank" rel="noopener">
+                Lihat Website
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="Screenshot 2026-06-16 221217.png" alt="Artha Konstruksi â€“ Company Profile Website" loading="lazy" />
+              <div class="portfolio-img-badge">Company Profile</div>
+            </div>
+            <div class="portfolio-card-body">
+              <div class="portfolio-card-name">Artha Konstruksi</div>
+              <div class="portfolio-card-desc">Company profile perusahaan konstruksi â€” tampil profesional untuk memenangkan tender dan membangun kepercayaan klien B2B.</div>
+              <a href="https://pt-artha-konstruksi-indonesia.vercel.app/" class="portfolio-card-link" target="_blank" rel="noopener">
+                Lihat Website
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="Screenshot 2026-06-16 221358.png" alt="Prime Barbershop Jakarta â€“ Website Bisnis" loading="lazy" />
+              <div class="portfolio-img-badge">Website Bisnis</div>
+            </div>
+            <div class="portfolio-card-body">
+              <div class="portfolio-card-name">Prime Barbershop Jakarta</div>
+              <div class="portfolio-card-desc">Website barbershop modern dengan sistem booking online, galeri hasil kerja, dan integrasi WhatsApp untuk konfirmasi jadwal langsung.</div>
+              <a href="https://landing-page-prime-barbershop-h5mkn6w53.vercel.app/" class="portfolio-card-link" target="_blank" rel="noopener">
+                Lihat Website
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="Screenshot 2026-06-17 015520.png" alt="Aurelia â€“ Landing Page Properti Premium" loading="lazy" />
+              <div class="portfolio-img-badge">Landing Page</div>
+            </div>
+            <div class="portfolio-card-body">
+              <div class="portfolio-card-name">Aurelia â€“ Hunian Eksklusif</div>
+              <div class="portfolio-card-desc">Landing page properti premium dengan desain mewah â€” dirancang untuk mengkonversi calon pembeli menjadi leads berkualitas tinggi.</div>
+              <a href="https://l-landing-page-aurelia-property.vercel.app/#kontak" class="portfolio-card-link" target="_blank" rel="noopener">
+                Lihat Website
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap" style="background:linear-gradient(135deg,#1a0a1a,#2d1a2d);display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(201,169,110,.3)" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <div class="portfolio-img-badge">Beauty & Clinic</div>
+            </div>
+            <div class="portfolio-card-body">
+              <div class="portfolio-card-name">Aurora Beauty Clinic</div>
+              <div class="portfolio-card-desc">Landing page klinik kecantikan premium â€” menonjolkan layanan, kepercayaan, dan mendorong booking konsultasi langsung via WhatsApp.</div>
+              <a href="https://aurora-beauty-clinic-premium-e79l.vercel.app/" class="portfolio-card-link" target="_blank" rel="noopener">
+                Lihat Website
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="process-header">
+        <p class="eyebrow" style="justify-content:center;">Cara Kerja</p>
+        <h2 class="section-title" style="margin-bottom:16px;">Proses Sederhana,<br /><em>Hasil yang Jelas</em></h2>
+        <p>Tidak ada istilah teknis yang membingungkan. Saya memastikan setiap langkah jelas dan Anda selalu tahu perkembangannya.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <div class="process-step-title">Konsultasi Gratis</div>
+          <div class="process-step-desc">Kita diskusi kebutuhan bisnis Anda via WhatsApp atau tatap muka. Tidak ada biaya, tidak ada kewajiban.</div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <div class="process-step-title">Perencanaan & Desain</div>
+          <div class="process-step-desc">Saya buat rancangan tampilan dan struktur konten sesuai kebutuhan bisnis Anda. Anda approve sebelum lanjut.</div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <div class="process-step-title">Pengerjaan & Revisi</div>
+          <div class="process-step-desc">Website dibangun sesuai rancangan. Ada sesi revisi untuk memastikan hasilnya sesuai ekspektasi Anda.</div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <div class="process-step-title">Live & Siap Pakai</div>
+          <div class="process-step-desc">Website diluncurkan. Saya pastikan Anda paham cara menggunakannya dan siap menerima pelanggan online.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <p class="eyebrow" style="justify-content:center;">Testimoni</p>
+        <h2 class="section-title">Apa Kata <em>Klien Kami</em></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Setelah punya website, pelanggan yang datang ke bengkel saya bilang menemukan saya dari Google. Sebelumnya tidak pernah terjadi. Sangat membantu bisnis saya berkembang.</p>
+          <div class="testi-divider"></div>
+          <div class="testi-name">Budi Santoso</div>
+          <div class="testi-role">Pemilik Bengkel Las, Jakarta Selatan</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Proses pengerjaannya transparan dan cepat. Rayhan menjelaskan semua dengan bahasa yang mudah saya mengerti. Website company profile kami sekarang jauh lebih profesional.</p>
+          <div class="testi-divider"></div>
+          <div class="testi-name">Artha Wijaya</div>
+          <div class="testi-role">Direktur, Artha Konstruksi</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Landing page yang dibuat sangat efektif untuk iklan kami. Banyak customer baru yang datang dari Google Ads dan bilang tertarik setelah lihat websitenya. Recommended!</p>
+          <div class="testi-divider"></div>
+          <div class="testi-name">Rendi Pratama</div>
+          <div class="testi-role">Owner, Prime Barbershop Jakarta</div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:20px; font-size:12px; color:var(--white-faint);">* Testimoni akan diperbarui dengan data klien nyata</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-left">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title" style="margin-bottom:20px;">Pertanyaan<br />yang Sering<br /><em>Ditanyakan</em></h2>
+          <p>Tidak menemukan jawaban yang Anda cari? Langsung tanya via WhatsApp â€” saya respon dalam 24 jam.</p>
+          <a href="https://wa.me/6285813302621?text=Halo%20Rayhan%2C%20saya%20ada%20pertanyaan%20tentang%20jasa%20website" class="btn-outline" target="_blank" rel="noopener">Tanya Langsung</a>
+        </div>
+        <div class="faq-list" id="faqList">
+          <div class="faq-item">
+            <button class="faq-question">
+              Berapa lama pengerjaan website?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">Landing page bisa selesai 3â€“5 hari kerja. Website bisnis lengkap 7â€“14 hari kerja. Company profile 10â€“21 hari kerja tergantung kompleksitas konten.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Berapa harganya?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">Harga disesuaikan dengan kebutuhan dan kompleksitas proyek. Konsultasi gratis terlebih dahulu agar saya bisa memberikan estimasi yang akurat dan sesuai budget Anda. Tidak ada biaya tersembunyi.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Apakah ada revisi?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">Ya, tersedia sesi revisi selama proses pengerjaan. Jumlah revisi dan ketentuannya akan disepakati di awal agar tidak ada miskomunikasi.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Apakah website bisa ditemukan di Google?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">Setiap website yang saya bangun sudah dilengkapi SEO Foundation â€” meta tags, schema markup, sitemap, dan Google Search Console setup. Ini fondasi agar Google bisa menemukan dan mengindeks website Anda.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Apakah bisa dikelola sendiri setelah jadi?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">Bisa. Saya akan memberikan panduan penggunaan dan pastikan Anda paham cara update konten dasar. Untuk perubahan desain atau penambahan fitur, bisa diskusi lebih lanjut.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Apakah melayani di luar Jakarta?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer">Ya, saya melayani seluruh Indonesia secara online via WhatsApp, email, dan video call. Tidak ada batasan lokasi untuk layanan digital.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREA COVERAGE -->
+  <section id="area">
+    <div class="container">
+      <div class="area-header">
+        <p class="eyebrow" style="justify-content:center;">Area Layanan</p>
+        <h2 class="section-title" style="text-align:center;">Melayani Bisnis di<br /><em>Jabodetabek & Seluruh Indonesia</em></h2>
+        <p style="text-align:center;color:var(--white-dim);font-size:14px;max-width:520px;margin:0 auto 16px;">Layanan digital tidak mengenal batas geografis. Kami melayani bisnis di seluruh Indonesia secara online â€” dari konsultasi hingga pengerjaan, semua via WhatsApp dan video call.</p>
+      </div>
+      <div class="area-grid">
+        <div class="area-col">
+          <div class="area-col-title">Jakarta</div>
+          <ul class="area-list">
+            <li>Jakarta Selatan</li>
+            <li>Jakarta Pusat</li>
+            <li>Jakarta Barat</li>
+            <li>Jakarta Timur</li>
+            <li>Jakarta Utara</li>
+          </ul>
+        </div>
+        <div class="area-col">
+          <div class="area-col-title">Bodetabek</div>
+          <ul class="area-list">
+            <li>Depok</li>
+            <li>Bekasi</li>
+            <li>Bogor</li>
+            <li>Tangerang</li>
+            <li>Tangerang Selatan</li>
+          </ul>
+        </div>
+        <div class="area-col">
+          <div class="area-col-title">Jawa & Bali</div>
+          <ul class="area-list">
+            <li>Bandung</li>
+            <li>Surabaya</li>
+            <li>Yogyakarta</li>
+            <li>Semarang</li>
+            <li>Bali / Denpasar</li>
+          </ul>
+        </div>
+        <div class="area-col">
+          <div class="area-col-title">Luar Jawa</div>
+          <ul class="area-list">
+            <li>Medan</li>
+            <li>Palembang</li>
+            <li>Makassar</li>
+            <li>Balikpapan</li>
+            <li>Seluruh Indonesia</li>
+          </ul>
+        </div>
+      </div>
+      <p class="area-note">Konsultasi, brief, revisi, dan pengiriman file dilakukan sepenuhnya secara online â€” efisien dan tanpa perlu tatap muka.</p>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <p class="eyebrow" style="justify-content:center;">Mulai Sekarang</p>
+        <h2 class="cta-title">
+          Bisnis Anda Layak<br />
+          Tampil <em>Profesional</em> Online
+        </h2>
+        <p class="cta-sub">Jangan biarkan kompetitor selangkah lebih maju. Konsultasi gratis, tanpa komitmen, tanpa tekanan.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/6285813302621?text=Halo%20Rayhan%2C%20saya%20ingin%20konsultasi%20gratis%20untuk%20website%20bisnis%20saya" class="btn-gold" target="_blank" rel="noopener">
+            Konsultasi Gratis via WhatsApp
+          </a>
+          <a href="#services" class="btn-outline">Lihat Semua Layanan</a>
+        </div>
+        <p class="cta-note">âš¡ Respon dalam 24 jam &nbsp;Â·&nbsp; Harga transparan &nbsp;Â·&nbsp; Melayani seluruh Indonesia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p class="eyebrow">Kontak</p>
+          <h2 class="section-title" style="margin-bottom:20px;">Mari Diskusikan<br /><em>Kebutuhan Anda</em></h2>
+          <p>Ceritakan bisnis dan kebutuhan Anda. Saya akan membantu menemukan solusi digital yang paling tepat dan sesuai budget.</p>
+          <div class="contact-items">
+            <a href="https://wa.me/6285813302621" class="contact-item" target="_blank" rel="noopener">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">WhatsApp Business</div>
+                <div class="contact-value">0858-1330-2621</div>
+              </div>
+            </a>
+            <a href="mailto:rayhnv7@gmail.com" class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">rayhnv7@gmail.com</div>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Lokasi</div>
+                <div class="contact-value">Jakarta Selatan, Indonesia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-box">
+          <h3 class="form-title">Ceritakan Kebutuhan Anda</h3>
+          <form id="contactForm" onsubmit="submitForm(event)">
+            <div class="form-group">
+              <label class="form-label" for="name">Nama Anda</label>
+              <input type="text" id="name" class="form-input" placeholder="Nama lengkap" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="business">Nama Bisnis</label>
+              <input type="text" id="business" class="form-input" placeholder="Nama usaha atau perusahaan" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">Layanan yang Dibutuhkan</label>
+              <select id="service" class="form-select">
+                <option value="">Pilih layanan...</option>
+                <option>Website Bisnis</option>
+                <option>Landing Page</option>
+                <option>Company Profile</option>
+                <option>SEO Foundation</option>
+                <option>Digital Presence</option>
+                <option>Belum yakin, ingin konsultasi dulu</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Ceritakan Kebutuhan Anda</label>
+              <textarea id="message" class="form-textarea" placeholder="Bisnis apa, target pelanggan, kebutuhan khusus, dll..." required></textarea>
+            </div>
+            <button type="submit" class="btn-gold form-submit">Kirim & Chat via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Rayhan<span>WEBSITE</span></div>
+        <p class="footer-tagline">Website & Digital Solutions Â· Jakarta Selatan</p>
+        <ul class="footer-nav">
+          <li><a href="#why">Kenapa Digital</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#process">Cara Kerja</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; 2025 Rayhan Setiawan. All rights reserved.</p>
+          <p class="footer-copy">Jakarta Selatan, Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WA FLOAT -->
+  <a href="https://wa.me/6285813302621?text=Halo%20Rayhan%2C%20saya%20ingin%20konsultasi%20gratis" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    hamburger.addEventListener('click', () => {
+      const links = document.querySelector('.nav-links');
+      const isOpen = links.style.display === 'flex';
+      links.style.display = isOpen ? '' : 'flex';
+      if (!isOpen) {
+        Object.assign(links.style, { position:'fixed', top:'64px', left:'0', right:'0', flexDirection:'column', background:'rgba(8,8,8,.97)', padding:'28px 32px', gap:'20px', borderBottom:'1px solid rgba(201,169,110,.1)', backdropFilter:'blur(20px)', zIndex:'99' });
+      } else {
+        Object.assign(links.style, { position:'', top:'', left:'', right:'', flexDirection:'', background:'', padding:'', gap:'', borderBottom:'', backdropFilter:'', zIndex:'' });
+      }
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Contact form â†’ WA
+    function submitForm(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const business = document.getElementById('business').value;
+      const service = document.getElementById('service').value;
+      const message = document.getElementById('message').value;
+      const text = encodeURIComponent(`Halo Rayhan,\n\nNama: ${name}\nBisnis: ${business || '-'}\nLayanan: ${service || '-'}\n\n${message}`);
+      window.open(`https://wa.me/6285813302621?text=${text}`, '_blank');
+    }
+
+    // Portfolio scroll buttons
+    const pScroll = document.getElementById('portfolioScroll');
+    document.getElementById('scrollRight').addEventListener('click', () => pScroll.scrollBy({ left: 380, behavior: 'smooth' }));
+    document.getElementById('scrollLeft').addEventListener('click', () => pScroll.scrollBy({ left: -380, behavior: 'smooth' }));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior:'smooth' }); }
+      });
+    });
+  </script>
+
+</body>
+</html>
