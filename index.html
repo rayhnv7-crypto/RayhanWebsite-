@@ -937,6 +937,22 @@
 @media(max-width:1050px){#hero.rayhan-showcase{height:630px;min-height:630px}#hero.rayhan-showcase .preview-travel{left:0}#hero.rayhan-showcase .preview-corp{right:0}#hero.rayhan-showcase .preview-food{left:22%}#hero.rayhan-showcase .showcase-content{width:62%;top:105px}#hero.rayhan-showcase .business-dock{grid-template-columns:repeat(5,minmax(0,1fr));row-gap:12px;padding:13px 8px}#hero.rayhan-showcase .business-dock a:nth-child(5){border-right:0}}
 @media(max-width:650px){#hero.rayhan-showcase{height:670px;min-height:670px}#hero.rayhan-showcase .showcase-art,#hero.rayhan-showcase .showcase-shade{bottom:160px}#hero.rayhan-showcase .showcase-content{top:85px;width:94%}#hero.rayhan-showcase .showcase-content h1{font-size:36px;letter-spacing:-1.4px}#hero.rayhan-showcase .showcase-content p{font-size:12px}#hero.rayhan-showcase .desktop-break{display:none}#hero.rayhan-showcase .showcase-benefits{gap:8px;margin-top:18px}#hero.rayhan-showcase .showcase-benefits>div{gap:4px}#hero.rayhan-showcase .showcase-benefits b{font-size:8px}#hero.rayhan-showcase .showcase-benefits small{font-size:6px}#hero.rayhan-showcase .preview-travel{left:-100px;top:12px;transform:scale(.65) rotateZ(5deg)}#hero.rayhan-showcase .preview-corp{right:-100px;top:12px;transform:scale(.65) rotateZ(-4deg)}#hero.rayhan-showcase .preview-home{left:-190px;top:345px;transform:scale(.65) rotateZ(-5deg)}#hero.rayhan-showcase .preview-shop{right:-190px;top:345px;transform:scale(.65) rotateZ(5deg)}#hero.rayhan-showcase .preview-food{left:50%;top:405px;transform:translateX(-50%) scale(.58) rotateZ(-4deg)}#hero.rayhan-showcase .business-dock{bottom:0;width:96%;grid-template-columns:repeat(2,minmax(0,1fr));border-radius:18px;gap:0;padding:7px;max-height:160px;overflow:auto}#hero.rayhan-showcase .business-dock a{padding:8px 4px;border-bottom:1px solid #edf1f6}#hero.rayhan-showcase .business-dock a:nth-child(2n){border-right:0}#hero.rayhan-showcase .business-dock a>span{width:28px;height:28px;font-size:14px;margin-bottom:1px}#hero.rayhan-showcase .business-dock b{font-size:9px}#hero.rayhan-showcase .business-dock small{font-size:7px}}
 
+
+    /* ===== PORTFOLIO PROJECT PREVIEWS ===== */
+    .portfolio-preview-lasecut,
+    .portfolio-preview-pangalengan { position:relative; isolation:isolate; min-height:235px; overflow:hidden; }
+    .portfolio-preview-lasecut { background:linear-gradient(135deg,#101b1d 0%,#155352 62%,#0b2425 100%); color:#f1f5f4; }
+    .portfolio-preview-pangalengan { background:linear-gradient(145deg,#102c24 0%,#245b40 57%,#9b8443 140%); color:#fffaf0; }
+    .portfolio-preview-inner { position:absolute; inset:0; z-index:1; padding:24px; display:flex; flex-direction:column; justify-content:space-between; }
+    .portfolio-preview-top { display:flex; justify-content:space-between; align-items:center; gap:10px; border-bottom:1px solid rgba(255,255,255,.2); padding-bottom:10px; font-size:9px; letter-spacing:.12em; }
+    .portfolio-preview-top span { opacity:.72; font-size:8px; text-align:right; }
+    .portfolio-preview-head { font-size:clamp(25px,3.2vw,38px); font-weight:800; letter-spacing:-.035em; line-height:.98; }
+    .portfolio-preview-head em { font-family:Georgia,serif; font-weight:400; color:#8ee7d1; }
+    .portfolio-preview-pangalengan .portfolio-preview-head { font-family:Georgia,serif; font-weight:400; font-size:clamp(25px,3.2vw,38px); }
+    .portfolio-preview-pangalengan .portfolio-preview-head em { color:#f1d89d; }
+    .portfolio-preview-rule { width:58px; height:3px; background:#8ee7d1; }
+    .portfolio-preview-foot { font-size:8px; letter-spacing:.13em; opacity:.8; }
+
   </style>
 
   <!-- Google Tag Manager -->
@@ -1359,7 +1375,6 @@
             </div>
           </div>
 
-
           <div class="portfolio-card">
             <div class="portfolio-img-wrap">
               <img src="Screenshot 2026-06-17 015520.png" alt="Aurelia Property, landing page properti premium" loading="lazy" />
@@ -1376,15 +1391,28 @@
           </div>
 
           <div class="portfolio-card">
-            <div class="portfolio-img-wrap" style="background:#102323; display:flex; align-items:stretch; overflow:hidden;">
-              <div style="position:absolute; inset:0; padding:28px; display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg,#101b1d 0%,#153f40 58%,#0b2425 100%); color:#f1f5f4;">
-                <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(125,230,208,.25);padding-bottom:10px;font-size:10px;letter-spacing:.18em;"><strong>LASECUT</strong><span style="color:#8ee7d1;">PRECISION / INDUSTRIAL</span></div>
-                <div>
-                  <div style="font-size:clamp(22px,3vw,34px);line-height:1.05;font-weight:800;max-width:260px;">CUT WITH<br><span style="color:#8ee7d1;">PRECISION.</span></div>
-                  <div style="width:65px;height:3px;background:#8ee7d1;margin:16px 0;"></div>
-                  <div style="font-size:10px;letter-spacing:.14em;color:#b9ceca;">LASER CUTTING · METAL FABRICATION</div>
-                </div>
-                <div style="display:flex;gap:7px;"><span style="height:5px;flex:1;background:#8ee7d1;"></span><span style="height:5px;flex:1;background:rgba(142,231,209,.38);"></span><span style="height:5px;flex:1;background:rgba(142,231,209,.15);"></span></div>
+            <div class="portfolio-img-wrap">
+              <img src="aurora-beauty.png" alt="Aurora Beauty Clinic" loading="lazy" />
+              <div class="portfolio-img-badge">Beauty & Clinic</div>
+            </div>
+            <div class="portfolio-card-body">
+              <div class=”portfolio-card-name”>Aurora Beauty Clinic</div>
+              <div class=”portfolio-card-desc”>Landing page klinik kecantikan premium “” menonjolkan layanan, kepercayaan, dan mendorong booking konsultasi langsung via WhatsApp.</div>
+              <a href=”#services” style=”font-size:11px;color:var(--white-faint);text-decoration:none;margin-top:2px;”>Butuh website serupa? <span style=”color:var(--gold);”>Lihat Layanan →</span></a>
+              <a href=”https://aurora-beauty-clinic-premium-e79l.vercel.app/” class=”portfolio-card-link” target=”_blank” rel=”noopener”>
+                Lihat Website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap portfolio-preview-lasecut">
+              <div class="portfolio-preview-inner">
+                <div class="portfolio-preview-top"><strong>LASECUT</strong><span>PRECISION / INDUSTRIAL</span></div>
+                <div class="portfolio-preview-head">CUT WITH<br><em>PRECISION.</em></div>
+                <div class="portfolio-preview-rule"></div>
+                <div class="portfolio-preview-foot">LASER CUTTING · METAL FABRICATION</div>
               </div>
               <div class="portfolio-img-badge">Industrial Website</div>
             </div>
@@ -1399,14 +1427,11 @@
           </div>
 
           <div class="portfolio-card">
-            <div class="portfolio-img-wrap" style="background:#153d2d; display:flex; align-items:stretch; overflow:hidden;">
-              <div style="position:absolute; inset:0; padding:28px; display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(145deg,#102c24 0%,#245b40 55%,#b68d45 145%); color:#fffaf0;">
-                <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(244,222,163,.33);padding-bottom:10px;font-size:10px;letter-spacing:.16em;"><strong>VISIT PANGALENGAN</strong><span style="color:#f1d89d;">WEST JAVA</span></div>
-                <div>
-                  <div style="font-family:Georgia,serif;font-size:clamp(24px,3.2vw,38px);line-height:.98;max-width:260px;">Find your<br><em style="color:#f1d89d;">quiet escape.</em></div>
-                  <div style="font-size:10px;letter-spacing:.13em;margin-top:16px;color:#e1e9dd;">HIGHLANDS · TEA FIELDS · NATURE</div>
-                </div>
-                <div style="display:flex;gap:8px;align-items:center;"><span style="width:8px;height:8px;border-radius:50%;background:#f1d89d;"></span><span style="font-size:10px;letter-spacing:.08em;">EXPLORE LOCAL EXPERIENCES</span></div>
+            <div class="portfolio-img-wrap portfolio-preview-pangalengan">
+              <div class="portfolio-preview-inner">
+                <div class="portfolio-preview-top"><strong>VISIT PANGALENGAN</strong><span>WEST JAVA</span></div>
+                <div class="portfolio-preview-head">Find your<br><em>quiet escape.</em></div>
+                <div class="portfolio-preview-foot">HIGHLANDS · TEA FIELDS · NATURE</div>
               </div>
               <div class="portfolio-img-badge">Travel & Tourism</div>
             </div>
@@ -1415,7 +1440,7 @@
               <div class="portfolio-card-desc">Panduan wisata dataran tinggi dengan destinasi pilihan, itinerary, rekomendasi penginapan, dan jalur konsultasi perjalanan.</div>
               <a href="https://pangalengan-travel-guide-bli6-4wuluxf68.vercel.app/" class="portfolio-card-link" target="_blank" rel="noopener noreferrer">
                 Lihat Website
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0"><path d="M18 13v6a2 2 0 012-2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
             </div>
           </div>
